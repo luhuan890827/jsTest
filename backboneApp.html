@@ -19,10 +19,16 @@
 
             </form>
         </div>
-        <ul class="J_todoList"></ul>
+        <ul class="J_todoList" data-json="%7B%22creator%22:%22laury%22,%22desc%22:%22some%20todo%20task%22,%22period%22:5%7D">
+            <li>
+                <p>由<span>laury</span>创建</p>
+                <p>耗时<span>5天</span></p>
+                <p>some todo task</p>
+            </li>
+        </ul>
     </div>
     <script id="J_todoItemTemplate" type="text/html">
-        <p>由<span><%=creator%>创建</span></p>
+        <p>由<span><%=creator%></span>创建</p>
         <p>耗时<span><%=period%>天</span></p>
         <p><%=desc%></p>
     </script>
