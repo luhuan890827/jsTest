@@ -1,2 +1,0 @@
-var templates={"J_someTemplate3":"\n    <li class=\"mClzz1\">{{tag13}}</li>\n","J_someTemplate4":"\n    <li class=\"mClzz2\">{{tag14}}</li>\n","J_someTemplate5":"\n    <li class=\"mClzz2\">{{tag14}}</li>\n"}
- module.exports=templates
