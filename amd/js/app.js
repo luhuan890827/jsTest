@@ -3,21 +3,26 @@
  */
 requirejs.config({
         //By default load any module IDs from js/lib
-        baseUrl: './amd',
+        baseUrl: './js',
         //except, if the module ID starts with "app",
         //load it from the js/app directory. paths
         //config is relative to the baseUrl, and
         //never includes a ".js" extension since
         //the paths config could be for a directory.
         paths: {
-                mod1: 'mod1'
-
+                mod1: 'mod1',
+                jquery:'http://code.jquery.com/jquery-2.1.3.min'
+        },
+    shim:{
+        jquery:{
+            exports:'$'
         }
+    }
 });
 
 // Start the main app logic.
-requirejs(['mod1','http://mockjs.com/dist/mock-min.js'],
-    function   (mod1,Mock) {
+requirejs(['mod1','http://mockjs.com/dist/mock-min.js','jquery'],
+    function   (mod1,Mock,$) {
             //jQuery, canvas and the app/sub module are all
             //loaded and can be used here now.
         var mTemplate = {
