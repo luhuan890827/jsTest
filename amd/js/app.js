@@ -62,14 +62,10 @@ requirejs(['mod1','http://mockjs.com/dist/mock-min.js','jquery'],
                 return this.title
             }
         }
-        var mockUrl = 'mockedUrl'
-        Mock.mock(mockUrl,mTemplate)
 
-        $.ajax({
-            url:mockUrl,
-            dataType:'json'
-        }).done(function(data){
-            console.log(data)
-        })
+
+
+
+
 
     });
